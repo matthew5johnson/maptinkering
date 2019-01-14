@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Interactive Maps</title>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
+	</head>
+	<body>
+		<h1>Map time!</h1>
+		<div id='map' width="100%" style='height:1000px'></div>
+		<script>
+			mapboxgl.accessToken = '';
+			var map = new mapboxgl.Map({
+			container: 'map',
+			style: 'mapbox://styles/geauxsheaux/cjqsg50px05gk2smtxjgi0uam',
+			center: [-90.07, 29.95],
+			zoom: 12
+			});
+		</script>
+	</body>
+</html>
